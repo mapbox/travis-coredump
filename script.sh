@@ -12,6 +12,7 @@ if [[ ${RESULT} == 0 ]]; then
     echo "\\o/ our test worked without problems"
 else
     echo "ruhroh test returned an errorcode of ${RESULT}"
+    cat `echo /proc/sys/kernel/core_pattern`
 fi
 
 # If the program returned an error code, now we check for a
