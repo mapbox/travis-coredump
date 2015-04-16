@@ -1,0 +1,5 @@
+dist: trusty
+
+script:
+- g++ --version
+- clang++ --version
